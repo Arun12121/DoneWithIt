@@ -1,0 +1,3 @@
+{"mongouri":"mongodb+srv://OSA:osa12345@osa.ca2y0.mongodb.net/OSA?retryWrites=true&w=majority",
+ "jwtsecret":"secret"   
+}
