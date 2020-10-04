@@ -18,8 +18,8 @@ mongoose.connect(config.get("mongouri"),{ useNewUrlParser: true,useUnifiedTopolo
         .catch(err=>{console.log(err)})
 
 app.use('/api/items',items)
-app.use('/api/register',register_user)
-app.use('/api/login',login_user)
+app.use('/api/users',register_user)
+app.use('/api/auth',login_user)
 
 const port=process.env.PORT || 8000;
 app.listen(port,()=>console.log(`server started on port ${port}`))
