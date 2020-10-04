@@ -92,7 +92,7 @@ router.get("/display_items",(req,res)=>{
     Item.find()
         .then(
             items.map(item=>{
-                gfs.files.findOne({filename:item.imageID},(err,file)=>{
+                gfs.files.findOne({filename:item.imagename},(err,file)=>{
                     if(!file||file.length===0) return res.status(404).json({err:"item image no exists"})
                     
                     return res.json(file)
