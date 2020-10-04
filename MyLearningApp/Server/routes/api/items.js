@@ -82,7 +82,7 @@ router.post("/upload",upload.single(file),(req,res)=>{
         category:req.body.category,
         price:req.body.price,
         description:req.body.description,
-        imageID:req.file.filename
+        imagename:req.file.filename
         })
 
     newitem.save().then((item)=>res.json(item))  

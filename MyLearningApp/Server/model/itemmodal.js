@@ -11,7 +11,7 @@ const Schema=mongoose.Schema;
 // })
 const Itemmodel = new Schema({
     name:{type:String,required:true},
-    imageID:{type:Schema.Types.ObjectId},
+    imagename:{type:String},
     category:{type:String,required:true},
     price:{type:String,required:true},
     description:{type:String,required:true}
